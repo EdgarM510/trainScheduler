@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Densha Solutions</title>
+  </head>
+  <body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Densha Solutions</h1>
+          <p class="lead">Current Train Schedule</p>
+          <table id="table">
+            <tr>
+              <th>Train Name</th>
+              <th>Destination</th>
+              <th>Frequency (min)</th>
+              <th>Next Arrival</th>
+              <th>Minutes Away</th>
+              <th>Edit</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="container">
+        <h4>Add/Update Train</h4>
+        <form>
+            Train Name:<br>
+            <input id="name-input" type="text" name="trainName" value="">
+            <br><br>
+            Destination:<br>
+            <input id="destination-input" type="text" name="destination" value="">
+            <br><br>
+            First Train Time (military time HH:mm):<br>
+            <input id="firstTrain-input" type="text" name="firstTrain" value="">
+            <br><br>
+            Frequency (minutes):<br>
+            <input id="frequency-input" type="text" name="frequency" value="">
+            <br><br>
+            <button id="add-train" type="submit" value="Submit">Add Train</button>
+            <button id="clear-data" type="submit" value="Clear All">Clear All</button>
+        </form>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+    <script src="app.js" type="text/javascript"></script>
+</body>
+</html>
