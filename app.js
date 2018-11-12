@@ -46,7 +46,6 @@ event.preventDefault();
   });  
 });
   
-      // Firebase watcher + initial loader HINT: .on("value")
   db.ref().on("child_added", function(childSnapshot){
     console.log("current child key", childSnapshot.key);
     console.log(childSnapshot.val());
